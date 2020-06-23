@@ -5,6 +5,7 @@ import (
 
 	"github.com/kokiebisu/go/io/example1"
 	"github.com/kokiebisu/go/io/example2"
+	"github.com/kokiebisu/go/io/example3"
 )
 
 func main() {
@@ -17,4 +18,5 @@ func main() {
 	if err != nil {
 		fmt.Println(err)
 	}
+	example3.UpdateFile("is this updated?", "./newData.txt")
 }
