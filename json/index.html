@@ -6,9 +6,13 @@
     <title>Document</title>
   </head>
   <body>
-    {{range .People}}
-    <p>First {{.First}}</p>
-    <p>Last {{.Last}}</p>
-    {{end}}
+    <script>
+      var user = {
+        FirstName: 'Kenichi',
+        LastName: 'Okiebisu',
+      };
+      var stringify = JSON.stringify(user);
+      document.write(stringify);
+    </script>
   </body>
 </html>
